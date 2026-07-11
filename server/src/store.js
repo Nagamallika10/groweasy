@@ -3,7 +3,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const directory = join(dirname(fileURLToPath(import.meta.url)), '..', 'data');
-const path = join(directory, 'store.json');
+const path = process.env.STORE_PATH || join(directory, 'store.json');
 const defaults = { leads: [], imports: [], activities: [], workspace: { name: 'Test Corp', ownerEmail: 'owner@testcorp.com', ownerAccess: true, plan: 'Growth' } };
 export async function readStore() {
   try { return { ...defaults, ...JSON.parse(await readFile(path, 'utf8')) }; }

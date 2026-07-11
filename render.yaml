@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: groweasy-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/state
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: STORE_PATH
+        value: /var/data/store.json
+    disk:
+      name: groweasy-data
+      mountPath: /var/data
+      sizeGB: 1
+  - type: web
+    name: groweasy-web
+    runtime: node
+    rootDir: web
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NEXT_PUBLIC_API_URL
+        sync: false
