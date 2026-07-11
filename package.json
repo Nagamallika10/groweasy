@@ -1,0 +1,9 @@
+{
+  "name": "groweasy-ai-csv-importer",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix web\"",
+    "test": "npm test --prefix server"
+  },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}

@@ -1,0 +1,202 @@
+{
+  "leads": [
+    {
+      "id": "f28e0d3b-c9fb-4191-9ac3-95af3f68b2be",
+      "created_at": "2026-05-13 08:50:48",
+      "name": "John Doe",
+      "email": "john.doe@gmail.com",
+      "country_code": "+91",
+      "mobile_without_country_code": "9876543210",
+      "company": "",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "lead_owner": "",
+      "crm_status": "",
+      "crm_note": "Interested in 2BHK apartment",
+      "data_source": "",
+      "possession_time": "",
+      "description": "",
+      "importedAt": "2026-07-11T07:22:50.352Z"
+    },
+    {
+      "id": "9df96d96-7197-4316-aba7-a606b3ca0774",
+      "created_at": "2026-05-13 08:55:30",
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@gmail.com",
+      "country_code": "+91",
+      "mobile_without_country_code": "9876543211",
+      "company": "",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India",
+      "lead_owner": "",
+      "crm_status": "",
+      "crm_note": "Call next week",
+      "data_source": "",
+      "possession_time": "",
+      "description": "",
+      "importedAt": "2026-07-11T07:22:50.352Z"
+    },
+    {
+      "id": "6a5d5a30-05ce-4443-9106-515850049ac2",
+      "created_at": "2026-05-13 09:00:15",
+      "name": "Rajesh Patel",
+      "email": "rajesh@gmail.com",
+      "country_code": "+91",
+      "mobile_without_country_code": "9876543212",
+      "company": "",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "lead_owner": "",
+      "crm_status": "",
+      "crm_note": "Not interested",
+      "data_source": "",
+      "possession_time": "",
+      "description": "",
+      "importedAt": "2026-07-11T07:22:50.352Z"
+    },
+    {
+      "id": "d03408fd-9b6f-4aec-969f-af7c5cd0a777",
+      "created_at": "2026-05-13 09:05:22",
+      "name": "Priya Singh",
+      "email": "priya@gmail.com",
+      "country_code": "+91",
+      "mobile_without_country_code": "9876543213",
+      "company": "",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "lead_owner": "",
+      "crm_status": "",
+      "crm_note": "Booked site visit",
+      "data_source": "",
+      "possession_time": "",
+      "description": "",
+      "importedAt": "2026-07-11T07:22:50.352Z"
+    }
+  ],
+  "imports": [
+    {
+      "id": "9fbb3180-e50a-4986-a0c2-0dbf0a4a25cf",
+      "filename": "facebook_leads.csv",
+      "importedAt": "2026-07-11T07:22:50.352Z",
+      "totalImported": 4,
+      "totalSkipped": 0,
+      "records": [
+        {
+          "created_at": "2026-05-13 08:50:48",
+          "name": "John Doe",
+          "email": "john.doe@gmail.com",
+          "country_code": "+91",
+          "mobile_without_country_code": "9876543210",
+          "company": "",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "India",
+          "lead_owner": "",
+          "crm_status": "",
+          "crm_note": "Interested in 2BHK apartment",
+          "data_source": "",
+          "possession_time": "",
+          "description": ""
+        },
+        {
+          "created_at": "2026-05-13 08:55:30",
+          "name": "Sarah Johnson",
+          "email": "sarah.johnson@gmail.com",
+          "country_code": "+91",
+          "mobile_without_country_code": "9876543211",
+          "company": "",
+          "city": "Bangalore",
+          "state": "Karnataka",
+          "country": "India",
+          "lead_owner": "",
+          "crm_status": "",
+          "crm_note": "Call next week",
+          "data_source": "",
+          "possession_time": "",
+          "description": ""
+        },
+        {
+          "created_at": "2026-05-13 09:00:15",
+          "name": "Rajesh Patel",
+          "email": "rajesh@gmail.com",
+          "country_code": "+91",
+          "mobile_without_country_code": "9876543212",
+          "company": "",
+          "city": "Delhi",
+          "state": "Delhi",
+          "country": "India",
+          "lead_owner": "",
+          "crm_status": "",
+          "crm_note": "Not interested",
+          "data_source": "",
+          "possession_time": "",
+          "description": ""
+        },
+        {
+          "created_at": "2026-05-13 09:05:22",
+          "name": "Priya Singh",
+          "email": "priya@gmail.com",
+          "country_code": "+91",
+          "mobile_without_country_code": "9876543213",
+          "company": "",
+          "city": "Pune",
+          "state": "Maharashtra",
+          "country": "India",
+          "lead_owner": "",
+          "crm_status": "",
+          "crm_note": "Booked site visit",
+          "data_source": "",
+          "possession_time": "",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "fea0df2d-9c1a-479a-ba83-28b360701ead",
+      "at": "2026-07-11T07:22:53.196Z",
+      "type": "action",
+      "message": "4 parsed leads were added.",
+      "details": {}
+    },
+    {
+      "id": "911d95e5-34bd-4ed3-804d-8b465370f8bd",
+      "at": "2026-07-11T07:22:50.352Z",
+      "type": "csv_import",
+      "message": "Imported 4 leads from facebook_leads.csv"
+    },
+    {
+      "id": "434c2382-f0db-40fe-bec2-11987dd1bfa0",
+      "at": "2026-07-11T07:22:15.368Z",
+      "type": "workspace_settings",
+      "message": "Test Corp hi account settings saved.",
+      "details": {
+        "name": "Test Corp hi",
+        "ownerEmail": "owner@testcorp.com",
+        "ownerAccess": false
+      }
+    },
+    {
+      "id": "b5835200-a4b4-429b-9322-a0832ea5d93d",
+      "at": "2026-07-11T07:22:06.766Z",
+      "type": "workspace_settings",
+      "message": "Test Corp hi account settings saved.",
+      "details": {
+        "name": "Test Corp hi",
+        "ownerEmail": "owner@testcorp.com",
+        "ownerAccess": true
+      }
+    }
+  ],
+  "workspace": {
+    "name": "Test Corp",
+    "ownerEmail": "owner@testcorp.com",
+    "ownerAccess": true,
+    "plan": "Growth"
+  }
+}

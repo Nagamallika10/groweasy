@@ -1,0 +1,3 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import { extractLocal, isValidLead } from '../src/extractor.js';
+test('maps common lead fields and normalizes a phone', () => { const lead = extractLocal({ 'Full Name': 'Dr. Jane Doe', 'Email Address': 'jane@example.com', Phone: '+91 98765 43210', Status: 'Demo scheduled' }); assert.equal(lead.name, 'Jane Doe'); assert.equal(lead.email, 'jane@example.com'); assert.equal(lead.country_code, '+91'); assert.equal(lead.mobile_without_country_code, '9876543210'); assert.equal(lead.crm_status, 'GOOD_LEAD_FOLLOW_UP'); });
+test('invalid contacts are skipped', () => assert.equal(isValidLead(extractLocal({ Name: 'Nobody' })), false));
